@@ -1,7 +1,8 @@
 package com.ppoo.tads.repository;
 
-import com.ppoo.tads.model.Livro;
 import java.util.List;
+
+import com.ppoo.tads.model.Livro;
 
 public interface LivroRepository {
     void salvar(Livro livro);

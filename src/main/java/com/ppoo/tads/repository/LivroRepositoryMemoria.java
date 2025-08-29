@@ -1,9 +1,9 @@
 package com.ppoo.tads.repository;
 
-import com.ppoo.tads.model.Livro;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import com.ppoo.tads.model.Livro;
 
 public class LivroRepositoryMemoria implements LivroRepository {
 

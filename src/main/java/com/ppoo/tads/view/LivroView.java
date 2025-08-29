@@ -9,6 +9,7 @@ import java.awt.*;
 import java.math.BigDecimal;
 
 public class LivroView extends JFrame {
+    private static final long serialVersionUID = 1L; // <<< remove o warning
 
     private final LivroController controller;
 
@@ -154,8 +155,8 @@ public class LivroView extends JFrame {
             String valorFormatado = valorField.getText().replace(",", ".");
             selecionado.setValor(new BigDecimal(valorFormatado));
 
-            controller.atualizarLivro(selecionado); // Atualiza o livro existente
-            atualizarLista(); // Atualiza a lista sem adicionar duplicados
+            controller.atualizarLivro(selecionado);
+            atualizarLista();
             limparCampos();
             JOptionPane.showMessageDialog(this, "Livro editado com sucesso!");
         } catch (NumberFormatException ex) {
